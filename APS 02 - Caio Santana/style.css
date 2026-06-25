@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+header {
+  background-color: #1e1e2e;
+  color: #fff;
+  padding: 32px 24px;
+}
+
+.header-inner h1 {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.header-inner p {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* MAIN */
+main {
+  flex: 1;
+  padding: 32px 24px;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* GRID DE CARDS */
+ul.grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+ul.grid li a {
+  display: block;
+  padding: 14px 16px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  color: #1e1e2e;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.15s, border-color 0.15s;
+}
+
+ul.grid li a:hover {
+  background-color: #1e1e2e;
+  color: #ffffff;
+  border-color: #1e1e2e;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+  color: #888;
+  border-top: 1px solid #ddd;
+  background-color: #fafafa;
+}
